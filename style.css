@@ -28,9 +28,11 @@ body {
 }
 
 .titulo {
-    font-size: 20px;
     font-family: 'Krona One', sans-serif;
+    font-size: 20px;
 }
+
+
 
 /* Organização das colunas */
 .container-links {
@@ -70,6 +72,12 @@ body {
     transition: 0.3s;
 }
 
+.links3 a{
+    display: block;
+    width: 200px;
+    height: 54px;
+}
+
 /* Cores da primeira coluna */
 .link-insta { background-color: #E1306C; }
 .link-git { background-color: #353434; }
@@ -88,6 +96,8 @@ body {
 .link-gmail{background-color: #1DB954;}
 .link-crunchyroll{background-color: #ff8000;}
 .link-drive{background-color: #3b5998; color: #9146FF;}
+.link-amino{background-color : #0400ffb7; color: #9146FF;}
+.link-mercado-livre{background-color: orange; color: #000000;}
 
 /* Efeito Hover */
 .links a:hover, .links2 a:hover, links3 a:hover {
