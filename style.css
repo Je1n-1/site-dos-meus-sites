@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Krona One', sans-serif;
     text-align: center;
 }
 
@@ -21,33 +21,32 @@ body {
 /* Foto e título */
 .titulo-foto {
     display: flex;  
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     margin-bottom: 40px;
 }
 
 .titulo {
-    font-family: 'Krona One', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
+}
+.titulo-inicial {
+    font-size: 80%;
+    text-align: center;
 }
 
 
 
 /* Organização das colunas */
-.container-links {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
+
 
 /* Colunas dos links */
-.corpo-links-coluna1, .corpo-links-coluna2, .corpo-links-coluna3 {
+.corpo-links-coluna1, .corpo-links-coluna2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
 }
+
 
 /* Foto */
 .imagem-perfil {
@@ -59,9 +58,9 @@ body {
 }
 
 /* Links */
-.links a, .links2 a, .links3 a {
-    display: block;
-    width: 200px;
+.links a{
+    display: inline-block;
+    text-align:center;
     padding: 15px;
     margin: 5px;
     color: white;
@@ -71,33 +70,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
 }
-
-.links3 a{
-    display: block;
-    width: 200px;
-    height: 54px;
-}
-
 /* Cores da primeira coluna */
 .link-insta { background-color: #E1306C; }
 .link-git { background-color: #353434; }
 .link-linkedin { background-color: #0077B5; color: white; }
-.link-spotify { background-color: #1DB954; color: black; }
-.link-facebook { background-color: #3b5998; color: azure; }
-
-/* Cores da segunda coluna */
-.link-twitch { background-color: #9146FF; color: white; }
-.alura { background-color: #0074c2; color: white; }
-.youtube { background-color: #FF0000; color: white; }
-.chatGPt { background-color: #00A67E; color: white; }
-.netflix { background-color: #E50914; color: white; }
-
-/*cores da terceira coluna*/
-.link-gmail{background-color: #1DB954;}
-.link-crunchyroll{background-color: #ff8000;}
-.link-drive{background-color: #3b5998; color: #9146FF;}
-.link-amino{background-color : #0400ffb7; color: #9146FF;}
-.link-mercado-livre{background-color: orange; color: #000000;}
+.link-alura { background-color: #033a5f; color: white; }
 
 /* Efeito Hover */
 .links a:hover, .links2 a:hover, links3 a:hover {
