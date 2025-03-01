@@ -1,5 +1,7 @@
+/* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
+/* Resumo de Estilos Globais */
 * {
     margin: 0;
     padding: 0;
@@ -13,15 +15,15 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
     justify-content: center;
     height: 80vh;
     gap: 10px;
 }
 
-/* Foto e título */
+/* Foto e Título */
 .titulo-foto {
-    display: flex;  
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -31,23 +33,13 @@ body {
 .titulo {
     font-size: 15px;
 }
-.titulo-inicial {
-    font-size: 80%;
-    text-align: center;
-}
 
-
-
-/* Organização das colunas */
-
-
-/* Colunas dos links */
+/* Colunas dos Links */
 .corpo-links-coluna1, .corpo-links-coluna2 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 /* Foto */
 .imagem-perfil {
@@ -58,10 +50,10 @@ body {
     border: 3px solid rgb(40, 24, 24);
 }
 
-/* Links */
-.links a{
+/* Links - Estilos e Hover */
+.links a {
     display: inline-block;
-    text-align:center;
+    text-align: center;
     padding: 15px;
     margin: 5px;
     color: white;
@@ -71,13 +63,82 @@ body {
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
 }
-/* Cores da coluna */
+
 .link-insta { background-color: #E1306C; }
 .link-git { background-color: #353434; }
 .link-linkedin { background-color: #0077B5; color: white; }
 .link-alura { background-color: #033a5f; color: white; }
 
-/* Efeito Hover */
-.links a:hover, .links2 a:hover, links3 a:hover {
+.links a:hover {
     opacity: 0.7;
+}
+
+/* Estilos dos ícones (do segundo código) */
+ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+.item a {
+    text-decoration: none;
+    width: 4.8rem;
+    height: 4.8rem;
+    background-color: #f0f9fe;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border: 3px solid #f0f9fe;
+    overflow: hidden;
+}
+
+.item a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: 0;
+    scale: 1 0;
+    transform-origin: bottom;
+    transition: scale 0.5s ease;
+}
+
+.item:hover a::before {
+    scale: 1 1;
+}
+
+.icon {
+    font-size: 2rem;
+    color: hsl(203, 92%, 8%);
+    transition: 0.5s ease;
+    z-index: 2;
+}
+
+.item a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+}
+
+/* Gradientes para os itens */
+.item:nth-child(1) {
+    --bg-color: linear-gradient(to bottom right, #f9ce34, #ee2a7b, #6228d7);
+}
+.item:nth-child(2) {
+    --bg-color: #0077b5;
+}
+.item:nth-child(3) {
+    --bg-color: #ff0000;
+}
+.item:nth-child(4) {
+    --bg-color: #000;
+}
+
+/* Ajustes para visualização */
+.titulo-inicial {
+    font-size: 80%;
+    text-align: center;
 }
