@@ -66,6 +66,7 @@ body {
   object-fit: cover;
   transform: translateX(1em);
   animation: float 3s ease-in-out infinite;
+  border-radius: 50%;
 }
 
 @keyframes float {
@@ -106,26 +107,61 @@ body {
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 23ch; }
+  to { width: 20ch; }
 }
 @keyframes blink {
   50% { border-color: transparent; }
 }
 
-/* Redes sociais */
+.corpo-links a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saiba_mais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saiba_mais a {
+  background: linear-gradient(to right, #4ed0c0, #81f3d3);
+  color: #1b1b1b;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saiba_mais a:hover {
+  background: linear-gradient(to right, #3cbba7, #6cd7c5);
+  transform: translateY(-2px);
+}
+
 ul {
   display: flex;
   list-style: none;
   gap: 1rem;
   justify-content: center;
+  align-items: center;
   margin-top: 1rem;
 }
 
 .item a {
   text-decoration: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #454546;
+  width: 2rem;
+  height: 2rem;
+  background-color: #4ed0c0;
   border-radius: 20%;
   display: flex;
   justify-content: center;
