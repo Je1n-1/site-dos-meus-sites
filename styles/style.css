@@ -1,24 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Krona One', sans-serif;
+/* Variáveis */
+:root {
+  --verde_neon: #00ff88; /* Adicionada definição da variável */
 }
-
-body {
-  background: rgb(39, 38, 38);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
-  padding-top: 80px;
-  overflow-x: hidden;
-  
-}
-
-
 
 /* Header fixo */
 .home {
@@ -26,18 +11,15 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(2, 3, 8, 0.9);
   z-index: 1000;
   padding: 1rem 2rem;
-  background:rgb(39, 38, 38);
-
 }
 
 .home_menu {
   display: flex;
   justify-content: flex-end;
-  gap: 1.5rem;
-  margin-right: 20%;
+  gap: 2rem;
+  margin-right: 25%;
 }
 
 .home a {
@@ -45,22 +27,21 @@ body {
   text-decoration: none;
   font-weight: 550;
 }
+
 .home a:hover {
-  color: #0f0;
+  color: var(--verde_neon);
 }
 
 .foto_container {
-  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  padding: 3rem;
   margin-top: 80px;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .imagem-perfil {
+  margin-right: 5rem;
   width: 380px;
   height: 380px;
   object-fit: cover;
@@ -84,13 +65,15 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
 }
-
-
 
 .titulo {
   font-size: 2rem;
   text-transform: uppercase;
+  font-family: 'Krona One', sans-serif;
 }
 
 .descricao {
@@ -109,6 +92,7 @@ body {
   from { width: 0; }
   to { width: 20ch; }
 }
+
 @keyframes blink {
   50% { border-color: transparent; }
 }
@@ -216,9 +200,14 @@ ul {
 
 /* Responsividade */
 @media screen and (max-width: 768px) {
-  .foto {
-    flex-direction: column;
-    text-align: center;
+  .foto_container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .imagem-perfil,
+  .informacoes {
+    margin: 0 auto;
   }
 
   .descricao-container {

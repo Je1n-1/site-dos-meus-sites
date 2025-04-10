@@ -1,0 +1,27 @@
+@import url(styles/sobre.css);
+@import url(styles/style.css);
+
+:root{
+    --cor-azul_claro: #4ed0c0;
+    --cor-verde_neon: #0f0;
+    --cor-verde_escuro: #3cbba7;
+    --cor-branco: #fff;
+    --cor-preto_background: rgb(39, 38, 38);
+    --cor-preto_escuro: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+  }
+  
+  body {
+    background: var(--cor-preto_background);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--cor-branco);
+    padding-top: 80px;
+    }
