@@ -1,7 +1,7 @@
-@import url(styles/reset.css);
-@import url(styles/style.css);
+@import url(styles/home.css);
 @import url(styles/sobre.css);
 @import url(styles/botões.css);
+@import url(styles/experiencias.css);
 
 :root {
     --cor-azul_claro: #4ed0c0;
@@ -9,6 +9,7 @@
     --cor-verde_escuro: #3cbba7;
     --cor-branco: #fff;
     --cor-preto_background: rgb(39, 38, 38);
+    --cor-preto_background_claro: #222;
     --cor-preto_escuro: #000000;
 }
 
@@ -24,3 +25,15 @@ body {
     color: var(--cor-branco);
     padding: 0 5rem 0 5rem;
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  

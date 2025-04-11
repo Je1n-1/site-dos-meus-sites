@@ -11,14 +11,14 @@ ul {
   text-decoration: none;
   width: 2rem;
   height: 2rem;
-  background-color: #4ed0c0;
+  background-color: var(--cor-azul_claro);
   border-radius: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 1;
-  border: 1px solid #525455;
+  border: 1px solid var(--cor-verde_neon);
   overflow: hidden;
 }
 
@@ -58,8 +58,8 @@ ul {
   --bg-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(22,107,190,1) 1%, rgba(0,212,255,1) 46%);
 }
 .item:nth-child(3) {
-  --bg-color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(115,115,115,1) 100%);
+  --bg-color: linear-gradient(90deg, rgb(0, 255, 68) 0%, rgb(0, 255, 51) 15%, rgb(0, 255, 26)51%, rgb(9, 255, 0) 100%);
 }
 .item:nth-child(4) {
-  --bg-color: linear-gradient(90deg, rgb(0, 255, 68) 0%, rgb(0, 255, 51) 15%, rgb(0, 255, 26)51%, rgb(9, 255, 0) 100%);
+  --bg-color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(115,115,115,1) 100%);
 }

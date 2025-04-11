@@ -7,8 +7,9 @@
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: var(--cor-preto_escuro);
-    padding: 1rem 5%;
+    background: var(--cor-preto_background_claro);
+    padding: 17px 17vw 17px 0;
+    border-bottom: 1px solid var(--cor-azul_claro);
 }
 
 .menu {
@@ -28,7 +29,7 @@
 }
 
 /* Hero */
-.hero {
+.informacoes_container {
     display: grid;
     grid-template-columns: 1fr 1fr;;
     align-items: center;
@@ -94,4 +95,6 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
+
+
 
