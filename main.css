@@ -2,6 +2,8 @@
 @import url(styles/sobre.css);
 @import url(styles/botões.css);
 @import url(styles/experiencias.css);
+@import url(styles/habilidades.css);
+@import url(styles/projetos.css);
 
 :root {
     --cor-azul_claro: #4ed0c0;

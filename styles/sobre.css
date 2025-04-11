@@ -1,6 +1,6 @@
 .sobre-mim {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 2fr;
     background-color: var(--cor-preto_background_claro);
     color: var(--cor-branco);
     padding: 4rem 2rem 80px 2rem;
@@ -19,7 +19,7 @@
   .sobre-mim h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #4ed0c0;
+    color: var(--cor-azul_claro);
   }
   
   .sobre-mim p {
@@ -29,7 +29,7 @@
   }
 
   .imagem-wrapper {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
   }
@@ -40,8 +40,8 @@
     border-radius: 50%;
     border: 1px solid var(--cor-azul_claro);
     margin: 0 auto;
-    transform: translateX(1em);
-    animation: float 3s ease-in-out infinite;
+    box-shadow: 0 0 10px var(--cor-azul_claro);
+    
   }
   
  

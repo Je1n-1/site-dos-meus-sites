@@ -2,7 +2,7 @@
     background-color: var(--cor-preto_background_claro);
     color: var(--cor-branco);
     padding: 4rem 2rem;
-    margin: 0 0p;
+    margin: 0 0 20px 0;
     border-radius: 10px;
   }
   
@@ -10,7 +10,7 @@
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #4ed0c0;
+    color: var(--cor-azul_claro);
   }
   
   .linha-tempo {
@@ -23,7 +23,7 @@
   
   .item-experiencia {
     background-color: #1e1e1e;
-    border-left: 4px solid #4ed0c0;
+    border-left: 4px solid var(--cor-azul_claro);
     padding: 1.5rem;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
