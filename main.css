@@ -1,7 +1,9 @@
-@import url(styles/sobre.css);
+@import url(styles/reset.css);
 @import url(styles/style.css);
+@import url(styles/sobre.css);
+@import url(styles/botões.css);
 
-:root{
+:root {
     --cor-azul_claro: #4ed0c0;
     --cor-verde_neon: #0f0;
     --cor-verde_escuro: #3cbba7;
@@ -15,13 +17,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Krona One', sans-serif;
-  }
-  
-  body {
+}
+
+body {
     background: var(--cor-preto_background);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color: var(--cor-branco);
-    padding-top: 80px;
-    }
+    padding: 0 5rem 0 5rem;
+}

@@ -3,66 +3,53 @@
 <head>
     <meta charset="UTF-8">       
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus Sites</title>
+    <title>Jean Land | Full Stack Developer</title>
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 </head>
 
 <body>
-    <!-- Cabeçalho fixo -->
-    <header class="home">
-        <nav class="home_menu">
-            <a class="home_inicio" href="index.html">Home</a>
-            <a class="home_sobre" href="about.html">Sobre mim</a>
-            <a class="home_projetos" href="#">Projetos</a>
-            <a href="#" class="home_habilidades">Habilidades</a>
+    <header class="header">
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">Sobre mim</a>
+            <a href="#">Projetos</a>
+            <a href="#">Habilidades</a>
         </nav>
     </header>
 
-    <!-- Conteúdo principal -->
     <main>
-        <div class="foto_container"> 
-            <section class="informacoes">
+        <section class="hero">
+            <div class="informacoes">
                 <h1 class="titulo">Jean Land</h1>
                 <p class="descricao">full stack developer</p>
-                <div class="corpo-links"> 
-                    <ul>
-                        <li class="saiba_mais">
-                            <a href="#" target="_blank">Saiba Mais</a>
-                          </li>
-                        <li class="item">
-                            <a href="https://instagram.com/je1nland" target="_blank">
-                            <i class="fa-brands fa-instagram icon"></i>
-                            </a>
-                        </li>
-                      <li class="item">
-                        <a href="https://www.linkedin.com/in/jeanland/" target="_blank">
-                          <i class="fa-brands fa-linkedin icon"></i>
-                        </a>
-                      </li>
-                      <li class="item">
-                        <a href="https://github.com/Je1n-1" target="_blank">
-                          <i class="fa-brands fa-github icon"></i>
-                        </a>
-                      </li>
-                    </ul>
-                </div>
-            </section>
-                <img src="img/image-perfil.png" alt="Minha Foto" class="imagem-perfil">
+                <ul class="links">
+                    <li class="item">
+                      <a href="https://instagram.com/je1nland"><i class="icon fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="item">
+                      <a href="https://www.linkedin.com/in/jeanland/"><i class="icon fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="item">
+                      <a href="https://github.com/Je1n-1"><i class="icon fa-brands fa-github"></i></a>
+                    </li>
+                    <li class="item">
+                      <a href="#"><i class="icon fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
             </div>
-        </div>
+            <img src="img/image-perfil.png" alt="Foto de Jean Land" class="imagem-perfil">
+        </section>
 
-      <section class="sobre_container">
-        <div class="sobre_informações">
-          <h2 class="sobre_titulo">Sobre mim</h2>
-          <p class="sobre_descricao">
-            Olá, meu nome é Jean Land, sou um desenvolvedor full stack com especialidade em JavaScript, HTML e CSS.
-            Sou apaixonado por tecnologia e estou sempre buscando aprender novas habilidades para me tornar um desenvolvedor mais completo e eficiente.
-          </p>
-      </div>
-        <img class="sobre_imagem" src="img/image-perfil2.jpg" alt="">
-      </section>
-
+        <section class="sobre">
+            <div class="sobre_conteudo">
+                <h2 class="sobre_titulo">Sobre mim</h2>
+                <p class="sobre_texto">
+                    Olá, meu nome é Jean Land. Sou um desenvolvedor full stack com especialidade em JavaScript, HTML e CSS. Sou apaixonado por tecnologia e estou sempre buscando aprender novas habilidades para me tornar um desenvolvedor mais completo e eficiente.
+                </p>
+            </div>
+            <img src="img/image-perfil2.jpg" alt="Jean estudando" class="sobre_imagem">
+        </section>
     </main>
 </body>
 </html>
