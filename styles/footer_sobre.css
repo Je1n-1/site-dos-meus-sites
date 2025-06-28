@@ -1,0 +1,14 @@
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  background: var(--gray-100);
+}
+
+footer {
+  text-align: center;
+  padding: var(--space-md);
+  background: var(--gray-100);
+  color: var(--gray-400);
+  font-size: 0.9rem;
+}

@@ -1,0 +1,26 @@
+.lista-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--space-md);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lista-habilidades li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--gray-300);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.lista-habilidades li:hover {
+  transform: translateY(-5px);
+  background: var(--accent-color);
+}
+
+.lista-habilidades .devicon {
+  font-size: 2rem;
+}

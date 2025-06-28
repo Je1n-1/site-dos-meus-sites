@@ -1,0 +1,30 @@
+/* Projetos */
+.projetos {
+  background: var(--gray-100);
+}
+
+.projeto-card {
+  background: var(--gray-300);
+  padding: var(--space-lg);
+  border-radius: 8px;
+  margin-bottom: var(--space-lg);
+  transition: transform 0.3s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.projeto-card h3 {
+  color: var(--gray-600);
+  margin-bottom: var(--space-sm);
+}
+
+.projeto-link {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
