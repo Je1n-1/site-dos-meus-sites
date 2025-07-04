@@ -13,6 +13,7 @@
   --gray-500: #C0C4CE;
   --gray-600: #E2E4E9;
   --accent-color: #4F46E5;
+  --perfil-color_accent-color: #9f9befaa;
   
   /* Fontes */
   --font-family-base: 'Inconsolata', monospace;
@@ -156,5 +157,12 @@ section h2::after {
   .perfil_imagem {
     width: 140px;
     height: 140px;
+  }
+
+  .sobre{
+    grid-template-columns: 1fr;
+  }
+  .descricao{
+    margin: 0 16px 0 16px;
   }
 }
