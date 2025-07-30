@@ -1,9 +1,3 @@
-@import url(styles/home.css);
-@import url(styles/footer_sobre.css);
-@import url(styles/habilidades.css);
-@import url(styles/barra_nav.css);
-@import url(styles/projetos.css);
-
 :root {
   /* Cores */
   --gray-100: #0D0E11;
