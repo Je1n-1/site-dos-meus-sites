@@ -1,30 +1,63 @@
-/* Projetos */
+/* Container da seção de projetos */
 .projetos {
-  background: var(--gray-100);
+  background-color: #1e1e1e;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  color: #e0e0e0;
 }
 
+/* Card do projeto */
 .projeto-card {
-  background: var(--gray-300);
-  padding: var(--space-lg);
-  border-radius: 8px;
-  margin-bottom: var(--space-lg);
-  transition: transform 0.3s;
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover do card */
 .projeto-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
+/* Título do projeto */
 .projeto-card h3 {
-  color: var(--gray-600);
-  margin-bottom: var(--space-sm);
+  font-size: 1.75rem;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
 }
 
+/* Imagem do projeto */
+.projeto-card img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+}
+
+/* Descrição do projeto */
+.projeto-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 1.2rem;
+}
+
+/* Link do projeto */
 .projeto-link {
-  display: inline-block;
-  margin-top: var(--space-sm);
-  color: var(--accent-color);
+  color: #4cc9f0;
+  font-weight: 600;
   text-decoration: none;
-  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.projeto-link:hover {
+  color: #00b4d8;
 }

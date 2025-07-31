@@ -1,3 +1,11 @@
+.informacoes_container{
+  background-image: url('../img/intro.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 .perfil_imagem {
   width: 160px;
   height: 190px;
@@ -15,6 +23,7 @@
 }
 
 .titulo {
+  width: 800px;
   font-family: var(--font-family-subtitle);
   font-size: var(--title-lg-size);
   font-weight: 700;
@@ -24,6 +33,7 @@
 }
 
 .descricao {
+  width: 800px;
   font-size: var(--subtitle-size);
   max-width: 680px;
   margin: 0 auto var(--space-lg);
