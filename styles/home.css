@@ -33,9 +33,16 @@
 }
 
 .descricao {
-  width: 800px;
+  max-width: 90vw;
   font-size: var(--subtitle-size);
   max-width: 680px;
   margin: 0 auto var(--space-lg);
   color: var(--gray-500);
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  background: var(--gray-100);
 }
