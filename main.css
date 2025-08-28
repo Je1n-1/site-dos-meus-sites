@@ -45,7 +45,7 @@ body {
 }
 
 .informacoes_container {
-  background-image: url('../img/Intro.png');
+  background-image: url('img/Intro.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

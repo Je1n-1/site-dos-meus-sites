@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles/habilidades.css">
   <link rel="stylesheet" href="styles/barra_nav.css">
   <link rel="stylesheet" href="styles/projetos.css">
+  <link rel="stylesheet" href="styles/hamburguer.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,15 +61,24 @@
     <section id="habilidades" class="habilidades">
       <h2>Habilidades</h2>
       <ul class="lista-habilidades">
-        <li><i class="devicon-python-plain colored"></i> Python</li>
-        <li><i class="devicon-html5-plain colored"></i> HTML5</li>
-        <li><i class="devicon-css3-plain colored"></i> CSS3</li>
-        <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
-        <li><i class="devicon-git-plain colored"></i> Git</li>
-        <li><i class="devicon-github-original"></i> GitHub</li>
-        <li><i class="devicon-react-original colored"></i> React</li>
-        <li><i class="devicon-nodejs-plain colored"></i> Node.js</li>
-      </ul>
+      <!-- Fundamentos Web -->
+      <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+      <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+      <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
+      
+      <!-- Frameworks e Bibliotecas -->
+      <li><i class="devicon-react-original colored"></i> React</li>
+      
+      <!-- Linguagens de Programação -->
+      <li><i class="devicon-python-plain colored"></i> Python</li>
+      
+      <!-- Bancos de Dados -->
+      <li><i class="devicon-mysql-plain colored"></i> MySQL</li>
+      
+      <!-- Controle de Versão -->
+      <li><i class="devicon-git-plain colored"></i> Git</li>
+      <li><i class="devicon-github-original"></i> GitHub</li>
+    </ul>
     </section>
 
     <div class="projetos_container">
@@ -99,8 +109,43 @@
           </div>
         </div>
       </section>
+      <section id="projetos" class="projetos">
+        <h2>Projetos em Andamento</h2>
+        <div class="projetos_content">
+          <div class="projetos_cards">
+
+            <article class="projeto-card">
+              <h3>Jogo do Numero Secreto</h3>
+              <img class="image_project" src="img/img_gerenciador_tarefa.jpg" alt="Imagem do projeto Jogo do Número Secreto">
+              <p>Projeto de lista de tarefa interativa com anexos de fotos e chats.
+                Desenvolvido com HTML, CSS, JavaScript, Bootstrap, Flask e Python utilizando POO.</p>
+              <a href="https://github.com/Je1n-1/gerenciador-de-tarefas/tree/main" class="projeto-link">Ver projeto</a>
+            </article>
+
+            <article class="projeto-card">
+              <h3>Code Conect</h3>
+              <img class="image_project" src="img/img_gerenciador_tarefa.jpg" alt="Imagem do projeto Code Connect">
+              <p>CodeConnect é um projeto educativo focado no aprendizado de JavaScript assíncrono, além de aprimorar habilidades em HTML e CSS.</p>
+              <a href="https://je1n-1.github.io/CodeConnect-JS-Ass-ncrono/" class="projeto-link">Ver projeto</a>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
+
+  <input type="checkbox" id="menu-hamburguer">    
+    
+    <label for="menu-hamburguer">
+        <div class="menu">
+            <span class="hamburguer"></span>
+        </div>
+    </label>
+
+    <div class="menu-content">
+        <ul>
+            <li><a href="https://github.com/Je1n-1/gerenciador-de-tarefas/tree/main">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</a></li> 
+        </ul>
 
   <aside class="contato" id="contato">
     <h2>Contato</h2>
