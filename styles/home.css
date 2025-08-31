@@ -60,6 +60,7 @@
 }
 
 .sobre_button {
+  text-decoration: none;
   background-color: var(--accent-color);
   line-height: 1.6;
   color: rgb(121, 18, 18);
