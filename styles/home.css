@@ -14,6 +14,26 @@
   color: var(--gray-500);
 }
 
+/* Links sociais abaixo do nome */
+.social-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.social-links a {
+  font-size: 28px;
+  color: #dcddde;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.social-links a:hover {
+  color: #5865f2; /* cor destaque estilo Discord */
+  transform: translateY(-3px);
+}
+
+
 .titulo {
   width: 800px;
   font-family: var(--font-family-subtitle);

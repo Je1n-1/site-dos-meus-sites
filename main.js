@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Smooth scroll para links da barra lateral
-  document.querySelectorAll('.barra-lateral a').forEach(anchor => {
+  document.querySelectorAll('.barra-lateral a, .menu-content a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
       
@@ -12,6 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
           top: targetElement.offsetTop - 80,
           behavior: 'smooth'
         });
+        
+        // Fechar menu hambúrguer se estiver aberto
+        const menuCheckbox = document.getElementById('menu-hamburguer');
+        if (menuCheckbox.checked) {
+          menuCheckbox.checked = false;
+        }
       }
     });
   });
@@ -47,4 +53,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // Atualiza ano do footer
   const currentYear = new Date().getFullYear();
   document.querySelector('footer p').textContent = `© ${currentYear} Jean Ricardo Land Miranda. Todos os direitos reservados.`;
+  
+  // Fechar menu ao clicar fora dele
+  document.addEventListener('click', function(event) {
+    const menuCheckbox = document.getElementById('menu-hamburguer');
+    const menuContent = document.querySelector('.menu-content');
+    const hamburgerLabel = document.querySelector('.hamburguer-label');
+    
+    if (menuCheckbox.checked && 
+        !menuContent.contains(event.target) && 
+        !hamburgerLabel.contains(event.target)) {
+      menuCheckbox.checked = false;
+    }
+  });
 });
